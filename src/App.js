@@ -3,41 +3,46 @@ import logo from './logo.svg';
 import iMac from './assets/apple/iMac.png'
 import iPadpro from './assets/apple/iPad_pro.png'
 import iPhoneX from './assets/apple/iPhone_X.png'
-function App() {
-  return (
-    <div>
+import MacBookImg from './assets/apple/MacBook.png'
 
+const IPhone = (color) => {
+  return(
 // iPhone X
-<div>
-  <div
-  style={{
-    height:324,
-    width:150,
-    backgroundColor:'white',
-    position: 'absolute',
-    zIndex: 2,
-    marginLeft:11,
-    marginTop:9,
-    borderRadius:16,
-    textAlign:'center'
-  }}
-  > 
-  <p>
-    iPhone X
-  </p>
-  </div>
-    <img
-    style={{
-      height:344,
-      width:172,
-      backgroundColor:'white',
-      borderRadius:26
-    }}
-      src={iPhoneX}
-    />
-</div>
-
-
+      <div
+  
+      >
+        <div
+        style={{
+          height:220,
+          width:100,
+          backgroundColor:'white',
+          position: 'absolute',
+          zIndex: 2,
+          marginLeft:11,
+          marginTop:7,
+          borderRadius:16,
+          textAlign:'center'
+        }}
+        > 
+        <p
+        >
+          iPhone X
+        </p>
+        </div>
+          <img
+          style={{
+            height:244,
+            width:120,
+            backgroundColor:'white',
+            borderRadius:20
+          }}
+            src={iPhoneX}
+          />
+      </div>
+  )
+}
+const IPad = () => {
+  return(
 // iPad
 <div>
 <div
@@ -67,8 +72,11 @@ style={{
 src={iPadpro}
 />
 </div>
-
-// iMac
+  )
+}
+const IMac = () => {
+  return(
+    // iMac
 <div
     
     style={{
@@ -104,6 +112,85 @@ src={iPadpro}
             }}/>
         </div>
     </div>
+  )
+}
+
+const MacBook = () => {
+  return(
+    <div>
+      <div
+      style={{
+        height:240,
+            width: 392,
+            marginTop:9,
+            backgroundColor:'white',
+            zIndex: 2,
+            textAlign: 'center',
+            position: 'absolute',
+            marginLeft: 55,
+            borderRadius:1
+      }}
+      >
+        <p>
+          MacBook
+        </p>
+      </div>
+      <img src={MacBookImg}
+        style={{
+          height:281,
+          width:500
+
+        }}
+      />
+    </div>
+  )
+}
+
+
+function App() {
+  return (
+    <div> 
+    <div
+        style={{
+          zIndex:1
+        }}
+    >
+
+    </div>
+    <IMac/>
+    <div
+    style={{
+      marginLeft:300,
+      zIndex:2,
+      position: 'absolute',
+      marginTop:310,
+    }}
+    >
+    <IPad/>
+
+    </div>
+    <div
+    style={{
+      marginLeft:800,
+      zIndex:3,
+      position:'absolute',
+      marginTop:342
+    }}
+    >
+      <IPhone/>
+    </div>
+    <div
+    style={{
+      zIndex:2,
+      position:'absolute',
+      marginTop:300,
+      marginLeft:210
+    }}    >
+    <MacBook/>
+
+    </div>
+
+
     </div>
     
    
