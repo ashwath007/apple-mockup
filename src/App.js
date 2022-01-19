@@ -13,15 +13,17 @@ const IPhone = (color) => {
       >
         <div
         style={{
-          height:220,
-          width:100,
+          height:230,
+          width:106,
           backgroundColor:'white',
           position: 'absolute',
           zIndex: 2,
-          marginLeft:11,
-          marginTop:7,
-          borderRadius:16,
-          textAlign:'center'
+          marginLeft:7,
+          marginTop:6,
+          borderRadius:11,
+          textAlign:'center',
+          backgroundImage: "url(" + "https://images.unsplash.com/photo-1642555074804-b0b780a4233b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=800" + ")"
+
         }}
         > 
         <p
@@ -52,10 +54,12 @@ style={{
   textAlign: 'center',
   position: 'absolute',
   backgroundColor: 'white',
-  height:195,
-  width: 280,
-  marginTop:9,
-  borderRadius:4
+  height:200,
+  width: 281,
+  marginTop:7,
+  borderRadius:4,
+  backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")"
+
 }}
 >
 <p>
@@ -65,7 +69,7 @@ style={{
 <img
 style={{
   height:213,
-  width: 300,
+  width: 298,
   marginLeft:550,
   zIndex: 1,
 }}
@@ -81,7 +85,7 @@ const IMac = () => {
     
     style={{
       alignItems: 'center',
-      marginLeft: 500
+      marginLeft: 500,
     }}
     >
     <div className="App">
@@ -94,7 +98,8 @@ const IMac = () => {
             zIndex: 2,
             textAlign: 'center',
             position: 'absolute',
-            marginLeft: 11
+            marginLeft: 11,
+            backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")"
 
           }}
           >
@@ -128,7 +133,9 @@ const MacBook = () => {
             textAlign: 'center',
             position: 'absolute',
             marginLeft: 55,
-            borderRadius:1
+            borderRadius:1,
+            backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")"
+
       }}
       >
         <p>
