@@ -5,6 +5,7 @@ import { ProgressBar, Step } from "react-step-progress-bar";
 import { Col, Row, Container } from 'react-bootstrap';
 
 import iMac from './assets/apple/iMac.png'
+import iMaxXDR from './assets/apple/ApplePro.png'
 import iPadpro from './assets/apple/iPad_pro.png'
 import iPhoneX from './assets/apple/iPhone_X.png'
 import MacBookImg from './assets/apple/MacBook.png'
@@ -157,150 +158,189 @@ const MacBook = () => {
   )
 }
 
-
-
-
-function App(){
-
-  const [projetCompletion, setprojetCompletion] = useState(0)
-
-
-  useEffect(() => {
-    for(let y=1;y<=100;y++){
-      setTimeout(() => {
-      setprojetCompletion(y)
-        
-      }, 500);
-    }
-  }, [])
-
+const IMacMain = () => {
   return(
-    <div>
-      <p>
-        Ji
-      </p>
-      <div
-      style={{padding:50}}
-      >
- <ProgressBar
-        percent={75}
-        filledBackground="linear-gradient(to right, #fefb72, #f0bb31)"
-      >
-        <Step transition="scale">
-          {({ accomplished }) => (
-            <img
-              style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-              width="30"
-              src="https://firebasestorage.googleapis.com/v0/b/homeautodemo-f6964.appspot.com/o/Group%20486.png?alt=media&token=115e3e79-b571-4717-8203-b1b7348cec4b"
-            />
-          )}
-         
-        </Step>
-        
-        <Step transition="scale">
-          {({ accomplished }) => (
-            <img
-              style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-              width="30"
-              src="https://firebasestorage.googleapis.com/v0/b/homeautodemo-f6964.appspot.com/o/Group%20486.png?alt=media&token=115e3e79-b571-4717-8203-b1b7348cec4b"
-            />
-          )}
-        </Step>
-        <Step transition="scale">
-          {({ accomplished }) => (
-            <img
-              style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-              width="30"
-              src="https://firebasestorage.googleapis.com/v0/b/homeautodemo-f6964.appspot.com/o/Group%20486.png?alt=media&token=115e3e79-b571-4717-8203-b1b7348cec4b"
-            />
-          )}
-        </Step>
-        <Step transition="scale">
-          {({ accomplished }) => (
-            <img
-              style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-              width="30"
-              src="https://orig00.deviantart.net/493a/f/2017/095/5/4/raichu_icon_by_pokemonshuffle_icons-db4ryym.png"
-            />
-          )}
-        </Step>
-      </ProgressBar>
-      <Container>
-
-  <Row>
+ // iMac Pro
+<div
     
-    <Col><p>
-    Awwwards
-            </p></Col>
-    <Col><p>
-    New product
-Launch
-            </p></Col>
-    <Col><p>
-    Govt projects
-            </p></Col>
-            <Col><p>
-            Completion of 
-100 Clients
-            </p></Col>
-  </Row>
-</Container>
-       
-      </div>
-     
+    style={{
+      alignItems: 'center',
+      marginLeft: 500,
+    }}
+    >
+    <div className="App">
+            <div
+          style={{
+            height:295,
+            width: 488,
+            marginTop:107,
+            backgroundColor:'white',
+            zIndex: 2,
+            textAlign: 'center',
+            position: 'absolute',
+            marginLeft: 6,
+            // backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")"
+
+          }}
+          >
+
+          <p>
+            iMac Pro 2021
+          </p>
+          </div>
+            <img src={iMaxXDR} style={{
+              height: 400,
+              width: 500,
+              marginTop: 100,
+              zIndex:1,
+              position: 'absolute'
+            }}/>
+        </div>
     </div>
   )
 }
 
-// function App() {
-//   return (
-//     <div> 
-//     <div
-//         style={{
-//           zIndex:1
-//         }}
-//     >
+// function App(){
 
-//     </div>
-//     <IMac/>
-//     <div
-//     style={{
-//       marginLeft:300,
-//       zIndex:2,
-//       position: 'absolute',
-//       marginTop:310,
-//     }}
-//     >
-//     <IPad/>
-
-//     </div>
-//     <div
-//     style={{
-//       marginLeft:800,
-//       zIndex:3,
-//       position:'absolute',
-//       marginTop:342
-//     }}
-//     >
-//       <IPhone/>
-//     </div>
-//     <div
-//     style={{
-//       zIndex:2,
-//       position:'absolute',
-//       marginTop:300,
-//       marginLeft:210
-//     }}    >
-//     <MacBook/>
-
-//     </div>
+//   const [projetCompletion, setprojetCompletion] = useState(0)
 
 
+//   useEffect(() => {
+//     for(let y=1;y<=100;y++){
+//       setTimeout(() => {
+//       setprojetCompletion(y)
+        
+//       }, 500);
+//     }
+//   }, [])
+
+//   return(
+//     <div>
+//       <p>
+//         Ji
+//       </p>
+//       <div
+//       style={{padding:50}}
+//       >
+//  <ProgressBar
+//         percent={75}
+//         filledBackground="linear-gradient(to right, #fefb72, #f0bb31)"
+//       >
+//         <Step transition="scale">
+//           {({ accomplished }) => (
+//             <img
+//               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
+//               width="30"
+//               src="https://firebasestorage.googleapis.com/v0/b/homeautodemo-f6964.appspot.com/o/Group%20486.png?alt=media&token=115e3e79-b571-4717-8203-b1b7348cec4b"
+//             />
+//           )}
+         
+//         </Step>
+        
+//         <Step transition="scale">
+//           {({ accomplished }) => (
+//             <img
+//               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
+//               width="30"
+//               src="https://firebasestorage.googleapis.com/v0/b/homeautodemo-f6964.appspot.com/o/Group%20486.png?alt=media&token=115e3e79-b571-4717-8203-b1b7348cec4b"
+//             />
+//           )}
+//         </Step>
+//         <Step transition="scale">
+//           {({ accomplished }) => (
+//             <img
+//               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
+//               width="30"
+//               src="https://firebasestorage.googleapis.com/v0/b/homeautodemo-f6964.appspot.com/o/Group%20486.png?alt=media&token=115e3e79-b571-4717-8203-b1b7348cec4b"
+//             />
+//           )}
+//         </Step>
+//         <Step transition="scale">
+//           {({ accomplished }) => (
+//             <img
+//               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
+//               width="30"
+//               src="https://orig00.deviantart.net/493a/f/2017/095/5/4/raichu_icon_by_pokemonshuffle_icons-db4ryym.png"
+//             />
+//           )}
+//         </Step>
+//       </ProgressBar>
+//       <Container>
+
+//   <Row>
+    
+//     <Col><p>
+//     Awwwards
+//             </p></Col>
+//     <Col><p>
+//     New product
+// Launch
+//             </p></Col>
+//     <Col><p>
+//     Govt projects
+//             </p></Col>
+//             <Col><p>
+//             Completion of 
+// 100 Clients
+//             </p></Col>
+//   </Row>
+// </Container>
+       
+//       </div>
+     
 //     </div>
+//   )
+// }
+
+function App() {
+  return (
+    <div> 
+    <div
+        style={{
+          zIndex:1
+        }}
+    >
+
+    </div>
+    <IMacMain/>
+    <div
+    style={{
+      marginLeft:300,
+      zIndex:2,
+      position: 'absolute',
+      marginTop:310,
+    }}
+    >
+    <IPad/>
+
+    </div>
+    <div
+    style={{
+      marginLeft:800,
+      zIndex:3,
+      position:'absolute',
+      marginTop:342
+    }}
+    >
+      <IPhone/>
+    </div>
+    <div
+    style={{
+      zIndex:2,
+      position:'absolute',
+      marginTop:300,
+      marginLeft:210
+    }}    >
+    <MacBook/>
+
+    </div>
+
+
+    </div>
     
    
-//   );
-// }
+  );
+}
 
 
 
